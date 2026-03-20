@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animation-container {
+  height: 1.2em;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.animation-inner div {
+  padding: 0 0.5rem;
+  height: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1.2em;
+  border-radius: 4px;
+}
+
+.animate-text-slide {
+  animation: text-animation 8s infinite;
+}
+
+.first-word { color: #0000FF; }
+.second-word { color: #00FF26B2; }
+.third-word { color : #FFEE33; }
+.fourth-word {color : #9747FF;}
+
+@keyframes text-animation {
+  0%, 15% { margin-top: 0; }
+  25%, 40% { margin-top: -2.4em; }
+  50%, 65% { margin-top: -4.8em; }
+  75%, 90% { margin-top: -7.2em; }
+  100% { margin-top: 0; }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #0A0A0B;
+}
