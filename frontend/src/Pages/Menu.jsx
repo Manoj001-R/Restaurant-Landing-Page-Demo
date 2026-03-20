@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Utensils } from 'lucide-react';
+import ClickSpark from '../Animation_components/ClickSpark';
 import image13 from '../assets/image13.png';
 import image14 from '../assets/image14.png';
 
@@ -19,7 +20,8 @@ const staggerContainer = {
 
 const Menu = () => {
   return (
-    <div className="w-full flex flex-col font-sans bg-[#131313] text-[#DDDDDD] overflow-x-hidden pt-32 pb-32">
+    <ClickSpark sparkColor='#fff' sparkSize={10} sparkRadius={15} sparkCount={8} duration={400}>
+      <div className="w-full flex flex-col font-sans bg-[#131313] text-[#DDDDDD] overflow-x-hidden pt-32 pb-32">
       
       {/* 1. Hero / Title Section */}
       <section className="relative w-full mb-24 md:mb-40 flex flex-col md:flex-row justify-between items-center min-h-[600px] md:min-h-[75vh]">
@@ -204,7 +206,8 @@ const Menu = () => {
          </motion.div>
       </section>
 
-    </div>
+      </div>
+    </ClickSpark>
   );
 };
 

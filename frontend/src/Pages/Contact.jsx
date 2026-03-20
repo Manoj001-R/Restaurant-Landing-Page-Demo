@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { MapPin, Navigation, Phone, Mail, Volume2, Globe, Aperture, Send } from 'lucide-react';
+import ClickSpark from '../Animation_components/ClickSpark';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -17,9 +18,10 @@ const staggerContainer = {
 
 const Contact = () => {
   return (
-    <div className="w-full flex flex-col font-sans bg-[#131313] text-[#DDDDDD] overflow-x-hidden pt-32 pb-32">
-      
-      {/* 1. Hero / Header */}
+    <ClickSpark sparkColor='#fff' sparkSize={10} sparkRadius={15} sparkCount={8} duration={400}>
+      <div className="w-full flex flex-col font-sans bg-[#131313] text-[#DDDDDD] overflow-x-hidden pt-32 pb-32">
+        
+        {/* 1. Hero / Header */}
       <section className="w-full max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 mb-16">
          <motion.div 
             variants={staggerContainer}
@@ -173,7 +175,8 @@ const Contact = () => {
          </motion.div>
       </section>
 
-    </div>
+      </div>
+    </ClickSpark>
   );
 };
 

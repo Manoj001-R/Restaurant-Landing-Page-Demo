@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { MoveRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import ClickSpark from '../Animation_components/ClickSpark';
 import image7 from '../assets/image7.png';
 import image8 from '../assets/image8.png';
 import image9 from '../assets/image9.png';
@@ -24,7 +25,8 @@ const staggerContainer = {
 
 const Experience = () => {
   return (
-    <div className="w-full flex flex-col font-sans bg-[#131313] text-[#DDDDDD] overflow-x-hidden pt-24 md:pt-0">
+    <ClickSpark sparkColor='#fff' sparkSize={10} sparkRadius={15} sparkCount={8} duration={400}>
+      <div className="w-full flex flex-col font-sans bg-[#131313] text-[#DDDDDD] overflow-x-hidden pt-24 md:pt-0">
       
       {/* 1. Hero Section */}
       <section className="relative w-full min-h-[90vh] flex flex-col justify-center px-6 md:px-12 lg:px-24">
@@ -249,7 +251,8 @@ const Experience = () => {
          </motion.div>
       </section>
 
-    </div>
+      </div>
+    </ClickSpark>
   );
 };
 

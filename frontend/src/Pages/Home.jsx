@@ -1,6 +1,7 @@
 import React from 'react';
 import { Calendar, Users, MoveRight, Wine, Citrus, Droplet } from 'lucide-react';
 import { motion } from 'motion/react';
+import ClickSpark from '../Animation_components/ClickSpark';
 import heroImage from '../assets/image.png';
 import image2 from '../assets/image2.png';
 import image3 from '../assets/image3.png';
@@ -28,7 +29,8 @@ const staggerContainer = {
 
 const Home = () => {
   return (
-    <div className="w-full flex flex-col font-sans bg-[#131313] text-[#DDDDDD] overflow-x-hidden">
+    <ClickSpark sparkColor='#fff' sparkSize={10} sparkRadius={15} sparkCount={8} duration={400}>
+      <div className="w-full flex flex-col font-sans bg-[#131313] text-[#DDDDDD] overflow-x-hidden">
       
       {/* 1. Hero Section */}
       <section id="home" className="relative w-full h-screen flex flex-col justify-center px-6 md:px-24">
@@ -273,7 +275,8 @@ const Home = () => {
          </motion.div>
       </section>
 
-    </div>
+      </div>
+    </ClickSpark>
   );
 };
 

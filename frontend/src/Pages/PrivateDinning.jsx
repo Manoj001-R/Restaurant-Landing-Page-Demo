@@ -4,6 +4,7 @@ import { Users, Wine, Shield, Navigation, Sun, Key, Compass, Music, Link, Send }
 import image15 from '../assets/image15.png';
 import image16 from '../assets/image16.png';
 import image17 from '../assets/image17.png';
+import ClickSpark from '../Animation_components/ClickSpark';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -20,9 +21,10 @@ const staggerContainer = {
 
 const PrivateDinning = () => {
   return (
-    <div className="w-full flex flex-col font-sans bg-[#131313] text-[#DDDDDD] overflow-x-hidden pt-24 md:pt-0">
-      
-      {/* 1. Hero Section */}
+    <ClickSpark sparkColor='#fff' sparkSize={10} sparkRadius={15} sparkCount={8} duration={400}>
+      <div className="w-full flex flex-col font-sans bg-[#131313] text-[#DDDDDD] overflow-x-hidden pt-24 md:pt-0">
+        
+        {/* 1. Hero Section */}
       <section className="relative w-full min-h-[85vh] md:min-h-[90vh] flex flex-col justify-center px-6 md:px-12 lg:px-24 mb-24 md:mb-40 overflow-hidden">
         <motion.div 
           initial={{ opacity: 0, scale: 1.05 }}
@@ -314,7 +316,8 @@ const PrivateDinning = () => {
          </motion.div>
       </section>
 
-    </div>
+      </div>
+    </ClickSpark>
   );
 };
 
