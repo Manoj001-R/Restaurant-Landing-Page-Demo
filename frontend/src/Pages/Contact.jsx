@@ -27,7 +27,7 @@ const Contact = () => {
             animate="visible"
             className="w-full mt-12 md:mt-20"
          >
-            <motion.h1 variants={fadeUp} className="text-[4rem] md:text-[6rem] font-bold leading-[0.9] tracking-tight mb-8">
+            <motion.h1 variants={fadeUp} className="text-5xl md:text-[6rem] font-bold leading-[0.9] tracking-tight mb-8">
                <span className="text-white block">CONNECT WITH</span>
                <span className="text-[#F07113] block drop-shadow-[0_0_20px_rgba(240,113,19,0.4)]">THE NIGHT</span>
             </motion.h1>

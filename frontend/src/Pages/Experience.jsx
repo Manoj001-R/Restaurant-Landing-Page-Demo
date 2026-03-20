@@ -52,7 +52,7 @@ const Experience = () => {
                <p className="text-[#E0A87A] text-[9px] font-bold tracking-[0.2em] uppercase">ESTABLISHED 2024</p>
             </motion.div>
             
-            <motion.h1 variants={fadeUp} className="text-6xl md:text-[5.5rem] font-bold tracking-tight leading-[1.05] mb-6 text-white bg-clip-text">
+            <motion.h1 variants={fadeUp} className="text-5xl sm:text-6xl md:text-[5.5rem] font-bold tracking-tight leading-[1.05] mb-6 text-white bg-clip-text">
               The Art <br />
               <span className="text-[#F07113]">of Spice.</span>
             </motion.h1>

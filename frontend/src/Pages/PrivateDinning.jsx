@@ -46,7 +46,7 @@ const PrivateDinning = () => {
               THE INNER SANCTUM
             </motion.p>
             
-            <motion.h1 variants={fadeUp} className="text-[5.5rem] md:text-[7rem] font-bold leading-[0.85] tracking-tight mb-8">
+            <motion.h1 variants={fadeUp} className="text-5xl sm:text-6xl md:text-[7rem] font-bold leading-[0.85] tracking-tight mb-8">
               <span className="text-white block">Private</span>
               <span className="text-[#F07113] block italic drop-shadow-[0_0_20px_rgba(240,113,19,0.3)]">Conviviality</span>
             </motion.h1>

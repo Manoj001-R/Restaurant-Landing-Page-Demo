@@ -52,7 +52,7 @@ const Home = () => {
           className="relative z-10 max-w-2xl mt-8"
         >
           <motion.p variants={fadeLeft} className="text-[#E0A87A] text-[9px] font-bold tracking-[0.3em] mb-4 uppercase">ESTABLISHED MMXXIV</motion.p>
-          <motion.h1 variants={fadeUp} className="text-6xl md:text-[5rem] font-bold tracking-tight leading-[1] mb-6 text-white">
+          <motion.h1 variants={fadeUp} className="text-5xl sm:text-6xl md:text-[5rem] font-bold tracking-tight leading-[1] mb-6 text-white">
             The Art of <br />
             <span className="text-[#F07113]">Spice</span>
           </motion.h1>

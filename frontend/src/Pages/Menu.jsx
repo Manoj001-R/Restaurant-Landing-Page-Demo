@@ -55,7 +55,7 @@ const Menu = () => {
                animate="visible"
                className="w-full md:w-1/2 pt-24 pb-64 md:py-32"
             >
-               <motion.h1 variants={fadeUp} className="text-[5.5rem] md:text-[7rem] font-bold leading-[0.85] tracking-tight mb-8">
+               <motion.h1 variants={fadeUp} className="text-5xl sm:text-6xl md:text-[7rem] font-bold leading-[0.85] tracking-tight mb-8">
                   <span className="text-white block">THE</span>
                   <span className="text-[#F07113] block drop-shadow-[0_0_20px_rgba(240,113,19,0.4)]">MENU</span>
                </motion.h1>
